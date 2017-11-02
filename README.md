@@ -1,1 +1,1 @@
-# ewallet
+# unitygamewallet
