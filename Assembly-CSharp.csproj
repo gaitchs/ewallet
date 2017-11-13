@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5D294C77-EBA4-9879-9398-96600F200B08}</ProjectGuid>
+    <ProjectGuid>{A00A7888-2912-9B75-D65D-CA66A4D61F07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Account.cs" />
      <Compile Include="Assets\control.cs" />
      <Compile Include="Assets\EmptyCSharpFile.cs" />
+     <Compile Include="Assets\PingContractService.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Unity/Wallet/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/g/ewallet/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -88,6 +90,45 @@
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Users/g/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.KeyStore">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.KeyStore.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/BouncyCastle.Crypto.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.RPC">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.RPC.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Hex">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.Hex.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.JsonRpc.Client">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.JsonRpc.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Signer">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.Signer.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Util">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.Util.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Unity">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.RLP">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.RLP.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.ABI">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.ABI.dll</HintPath>
+ </Reference>
+ <Reference Include="Nethereum.Contracts">
+ <HintPath>C:/Users/g/ewallet/Assets/neth/Nethereum.Contracts.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
