@@ -8,27 +8,37 @@ using System;
 public class Account : MonoBehaviour {
 	
 	public Text balanceField;
-	public Text privateField;
+
+	public InputField privateField;
+
+
+
 
 	// Here we define accountAddress (the public key; We are going to extract it later using the private key)
 	private string accountAddress;
+
+	private string accountPrivateKey;
+
 	// This is the secret key of the address, you should put yours.
-	private string accountPrivateKey ="3fba7ddfba0ec0c660f9659ccc321ef20569a318278bc82e876553dbd8e86e86";
+	//private string accountPrivateKey = "";
 	// This is the testnet we are going to use for our contract, in this case kovan
-	private string _url = "https://kovan.infura.io";
+	private string _url = "https://rinkeby.infura.io";
 
 
 	// We define a new PingContractService (this is the file we are going to create for our contract)
 	private PingContractService pingContractService = new PingContractService ();
 
 	// Use this for initialization
-	void Start () {
+	public void S () {
+		accountPrivateKey = privateField.text;
+
+	
 		// First we'll call this function which will extract and assign the public key from the accountPrivateKey defined above.
 		importAccountFromPrivateKey ();
 
 		// After this we call the PingTransaction function to actually interact with the contract.
 		// This function will create a new transaction to our contract, consuming gas to pay for it's computational costs.
-		 StartCoroutine (PingTransaction ());
+		// StartCoroutine (PingTransaction ());
 
 
 
@@ -47,6 +57,8 @@ public class Account : MonoBehaviour {
 				}));
 			});
 		}
+
+		getbalance ();
 
 	}
 
